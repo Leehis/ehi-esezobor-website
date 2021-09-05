@@ -4,6 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  color: #202020;
 }
 
 .navbarWrapper {
@@ -17,7 +18,7 @@
 }
 
 .dot {
-  color: black;
+  color: #202020;
   font-size: 14px !important;
   margin-right: 5px;
 }
@@ -29,10 +30,10 @@
 }
 
 .leftContent {
-  color: black;
-  font-weight: 700;
+  color: #202020;
+  font-weight: 900;
   cursor: pointer;
-  /* font-style: oblique; */
+  font-style: oblique;
 }
 
 .topRight {
@@ -53,9 +54,11 @@
   cursor: pointer;
   border-radius: 10px;
   padding: 15px 15px;
+  font-weight: 900;
 }
 
 .rightItems:hover {
   background-color: #006b61;
   color: #ceff00;
+  font-style: oblique;
 }

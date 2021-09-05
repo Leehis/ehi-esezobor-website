@@ -1,0 +1,69 @@
+/* font-family: 'Montserrat', sans-serif; */
+.hero {
+  background-color: #006b61;
+  color: black;
+}
+
+.heroWrapper {
+  width: 100%;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.leftHeroContent {
+  flex: 4;
+  font-weight: 600;
+}
+
+.heroTitle {
+  font-size: 60px;
+  color: #202020;
+}
+
+.heroSubtitle {
+  font-size: 60px;
+}
+
+.name {
+  color: #ceff00;
+}
+
+.socials {
+  display: flex;
+}
+
+.socialList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.socialIcons {
+  margin-right: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+.socialIcon {
+  color: #ceff00;
+  font-size: 30px;
+}
+
+.rightHeroContent {
+  flex: 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hire,
+.contact {
+  background-color: #202020;
+  border: 0px;
+  cursor: pointer;
+  color: #ceff00;
+  margin: 10px 0px;
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
