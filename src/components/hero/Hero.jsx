@@ -9,7 +9,9 @@ const Hero = () => {
           <div className='heroTitle'>
             Hi, I'm <span className='name'>Ehi.</span>
           </div>
-          <div className='heroSubtitle'>I'm a full stack developer.</div>
+          <div className='heroSubtitle'>
+            I'm a full stack developer and UI/UX Designer.
+          </div>
           <div className='socials'>
             <ul className='socialList'>
               <li className='socialIcons'>

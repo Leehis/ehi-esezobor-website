@@ -1,0 +1,66 @@
+.tools {
+  height: 100%;
+  background-color: #0011ff;
+  /*ceff00*/
+}
+
+.toolsWrapper {
+  height: 100%;
+  padding: 20px;
+  display: block;
+  justify-content: center;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.toolsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backend {
+  flex: 1;
+}
+
+.backendTitle {
+  font-size: 20px;
+}
+
+.backendToolsList {
+  list-style: none;
+}
+
+.backendTools {
+}
+
+.frontend {
+  flex: 1;
+}
+
+.frontendTitle {
+  font-size: 20px;
+}
+
+.frontendToolsList {
+  list-style: none;
+}
+
+.frontendTools {
+}
+
+.others {
+  flex: 1;
+}
+
+.othersTitle {
+  font-size: 20px;
+}
+
+.othersToolsList {
+  list-style: none;
+}
+
+.othersTools {
+}
