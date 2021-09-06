@@ -5,7 +5,10 @@ const Navbar = () => {
     <div className='navbar'>
       <div className='navbarWrapper'>
         <div className='topLeft'>
-          <div className='leftContent'>{'<ehi.esezobor />'}</div>
+          <div className='leftContent'>
+            <span id='a'>{'<ehi.esezobor />'}</span>
+            <span id='b'>{'<ehinomen.chris.esezobor />'}</span>
+          </div>
         </div>
 
         <div className='topRight'>

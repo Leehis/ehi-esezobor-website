@@ -36,6 +36,28 @@
   /* font-style: oblique; */
 }
 
+.leftContent span#a {
+  display: inline;
+  /* will-change: transform;
+  transition: transform 450ms; */
+}
+
+.leftContent:hover span#a {
+  display: none;
+  /* transition: transform 125ms; */
+}
+
+.leftContent span#b {
+  display: none;
+  /* will-change: transform;
+  transition: transform 450ms; */
+}
+
+.leftContent:hover span#b {
+  display: inline;
+  /* transition: transform 125ms; */
+}
+
 .topRight {
   display: flex;
 }

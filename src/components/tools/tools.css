@@ -1,23 +1,43 @@
 .tools {
-  height: 100%;
-  background-color: #0011ff;
-  /*ceff00*/
+  background-color: #202020;
+  color: white;
+  height: 800px;
 }
 
 .toolsWrapper {
   height: 100%;
-  padding: 20px;
   display: block;
   justify-content: center;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.titleContainer {
+  font-style: bold;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .title {
   font-size: 40px;
+  align-self: center;
+}
+
+.subtitles {
+  color: #5a5a5a;
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 .toolsContainer {
   display: flex;
   justify-content: space-between;
+  margin-top: 70px;
+  align-content: center;
+  padding: 20px 30px;
 }
 
 .backend {
@@ -25,14 +45,18 @@
 }
 
 .backendTitle {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .backendToolsList {
   list-style: none;
+  margin-top: 22px;
 }
 
 .backendTools {
+  font-size: 30px;
+  color: #ceff00;
+  margin-bottom: 20px;
 }
 
 .frontend {
@@ -40,14 +64,18 @@
 }
 
 .frontendTitle {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .frontendToolsList {
   list-style: none;
+  margin-top: 22px;
 }
 
 .frontendTools {
+  font-size: 30px;
+  color: #ceff00;
+  margin-bottom: 20px;
 }
 
 .others {
@@ -55,12 +83,16 @@
 }
 
 .othersTitle {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .othersToolsList {
   list-style: none;
+  margin-top: 22px;
 }
 
 .othersTools {
+  font-size: 30px;
+  color: #ceff00;
+  margin-bottom: 20px;
 }
