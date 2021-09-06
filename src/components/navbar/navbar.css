@@ -60,7 +60,7 @@
   background-size: 200%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .rightItems:hover {
