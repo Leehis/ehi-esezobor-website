@@ -1,7 +1,8 @@
 /* font-family: 'Montserrat', sans-serif; */
 .hero {
-  background-color: #006b61;
-  color: black;
+  background-color: #202020;
+  color: white;
+  height: 800px;
 }
 
 .heroWrapper {
@@ -9,20 +10,43 @@
   padding: 100px 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  /* position: relative; */
 }
 
 .leftHeroContent {
   flex: 4;
   font-weight: 600;
+  padding-top: 200px;
+  padding-left: 20px;
 }
 
 .heroTitle {
   font-size: 60px;
-  color: #202020;
+  color: white;
+
+  /* position: absolute;
+  width: 289px;
+  height: 45px;
+  left: 156px;
+  top: 343px;
+
+  font-family: Courier New;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 45px;
+
+  color: #ffffff; */
 }
 
 .heroSubtitle {
   font-size: 60px;
+
+  /* position: absolute;
+  width: 625px;
+  height: 99px;
+  left: 156px;
+  top: 397px; */
 }
 
 .name {
@@ -54,16 +78,25 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  padding-top: 150px;
 }
 
 .hire,
-.contact {
-  background-color: #202020;
+.work {
   border: 0px;
   cursor: pointer;
-  color: #ceff00;
-  margin: 10px 0px;
-  font-size: 40px;
+  color: #202020;
+  margin: 20px 0px;
+  font-size: 30px;
   border-radius: 10px;
-  padding: 20px 30px;
+  padding: 20px 40px;
+  font-weight: bold;
+}
+
+.hire {
+  background-color: white;
+}
+
+.work {
+  background-color: #ceff00;
 }

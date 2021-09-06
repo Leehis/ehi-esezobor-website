@@ -10,7 +10,8 @@ const Hero = () => {
             Hi, I'm <span className='name'>Ehi.</span>
           </div>
           <div className='heroSubtitle'>
-            I'm a full stack developer and UI/UX Designer.
+            I'm a full stack developer
+            <br /> and UI/UX Designer.
           </div>
           <div className='socials'>
             <ul className='socialList'>
@@ -24,8 +25,8 @@ const Hero = () => {
           </div>
         </div>
         <div className='rightHeroContent'>
-          <button className='hire'>.resume( )</button>
-          <button className='contact'>.work( )</button>
+          <button className='hire'>.resume()</button>
+          <button className='work'>.work()</button>
         </div>
       </div>
     </div>
