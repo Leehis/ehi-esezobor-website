@@ -34,6 +34,7 @@ const Project = () => {
             backgroundColor: '#ceff00',
             color: '#202020',
             fontSize: '30px',
+            marginRight: '150px',
           },
         }}
         backwardBtnProps={{
@@ -47,6 +48,7 @@ const Project = () => {
             backgroundColor: '#ceff00',
             color: '#202020',
             fontSize: '30px',
+            marginLeft: '150px',
           },
         }}
         itemsToShow={1}
@@ -55,81 +57,47 @@ const Project = () => {
         {data.map((portfolioProject) => {
           const { id, title, img, description, techStack } = portfolioProject
           return (
-            <div
-              className='carouselBox'
-              //   style={{
-              //     background: '#202020',
-              //     width: 977,
-              //     height: 310,
-              //     textAlign: 'center',
-              //     boxSizing: 'border-box',
-              //   }}
-            >
+            <div className='carouselBox'>
               <div className='cardTop'>
                 <div className='cardLeft'>
                   <div className='imgBox'>
-                    <img src={img} alt='' />
+                    <img
+                      className='projectCover'
+                      style={{
+                        objectFit: 'cover',
+                        borderRadius: '10px',
+                        width: 350,
+                        height: 248,
+                      }}
+                      src={img}
+                      alt=''
+                    />
                   </div>
                 </div>
                 <div className='cardRight'>
-                  <div
-                    className='cardTitle'
-                    // style={{
-                    //   textAlign: 'center',
-                    //   fontSize: '30px',
-                    //   color: '#202020',
-                    //   fontWeight: '900',
-                    //   paddingTop: '10px',
-                    // }}
-                  >
-                    {title}
-                  </div>
-                  <div
-                    className='cardDesc'
-                    // style={{
-                    //   fontSize: '24px',
-                    //   color: '#202020',
-                    //   fontStyle: 'italic',
-                    //   fontWeight: '500',
-                    // }}
-                  >
-                    {description}
-                  </div>
-                  <div
-                    className='cardLinks'
-                    // style={{
-                    //   display: 'flex',
-                    //   alignItems: 'center',
-                    //   justifyContent: 'center',
-                    // }}
-                  >
-                    <ul
-                      className='links'
-                      //   style={{
-                      //     listStyle: 'none',
-                      //     display: 'flex',
-                      //   }}
-                    >
-                      <li
-                        className='singleLink'
-                        // style={{
-                        //   padding: '10px',
-                        //   cursor: 'pointer',
-                        //   fontSize: '24px',
-                        //   fontStyle: 'bold',
-                        // }}
-                      >{`[github]`}</li>
-                      <li className='singleLink'>live demo</li>
-                      <li className='singleLink'>figma</li>
+                  <div className='cardTitle'>{title}</div>
+                  <div className='cardDesc'>{description}</div>
+                  <div className='cardLinks'>
+                    <ul className='links'>
+                      <li className='singleLink'>{`[github]`}</li>
+                      <li className='singleLink'>{`[live demo]`}</li>
+                      {/* <li className='singleLink'>{`[figma]`}</li> */}
                     </ul>
                   </div>
+
                   <div className='stackDisplay'>
-                    <ul className='techStack'></ul>
+                    <div className='techStackTitle'>
+                      {`/* Tech Stack Used: */`}
+                    </div>
+                    <ul className='techStack'>
+                      <li className='tech'>{techStack[0]}</li>
+                      <li className='tech'>{techStack[1]}</li>
+                      <li className='tech'>{techStack[2]}</li>
+                      <li className='tech'>{techStack[3]}</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              {/* <h3>{id}</h3>
-              <h2>{title}</h2> */}
             </div>
           )
         })}
@@ -139,22 +107,3 @@ const Project = () => {
 }
 
 export default Project
-
-//  {Array.from({ length: 3 }).map((item, index)
-
-// <div
-//             style={{
-//               background: '#202020',
-//               width: 977,
-//               height: 310,
-//               border: '30px solid white',
-//               textAlign: 'center',
-//               lineHeight: '240px',
-//               boxSizing: 'border-box',
-//             }}
-//             key={index}
-//           >
-
-{
-  /* </div> */
-}

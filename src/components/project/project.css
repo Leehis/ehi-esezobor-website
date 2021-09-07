@@ -32,9 +32,7 @@
   display: flex;
 }
 
-.img {
-  width: 100%;
-  height: 100%;
+.projectCover {
   object-fit: cover;
   border-radius: 10px;
   align-self: center;
@@ -72,6 +70,8 @@
 .links {
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .singleLink {
@@ -83,12 +83,30 @@
   font-size: 24px;
   font-style: bold;
   cursor: pointer;
+  align-self: center;
+  white-space: nowrap;
+  will-change: transform;
+  transition: transform 450ms;
+}
+
+.singleLink:hover {
+  font-weight: 600;
+  font-style: italic;
+  transition: transform 125ms;
+  transform: translateY(-2px);
+  background-color: #ceff00;
+  color: #202020;
+  transition: 0.3s ease-out;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .cardBottom {
   background-color: #ceff00;
   margin-top: 20px;
   height: 50px;
+  width: 10px;
 }
 
 .carouselBox {
@@ -97,4 +115,37 @@
   height: 310;
   text-align: center;
   box-sizing: border-box;
+}
+
+.stackDisplay {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.techStack {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techStackTitle {
+  color: #202020;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.tech {
+  background-color: #202020;
+
+  margin: 5px 10px;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-style: italic;
+  align-self: center;
+  white-space: nowrap;
 }
