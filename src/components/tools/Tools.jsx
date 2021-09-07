@@ -42,6 +42,7 @@ const Tools = () => {
             </ul>
           </div>
         </div>
+        <div className='addedComment'>{`// more skills coming be patient brother!`}</div>
       </div>
     </div>
   )

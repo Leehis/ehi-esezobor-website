@@ -22,7 +22,7 @@
 }
 
 .title {
-  font-size: 40px;
+  font-size: 50px;
   align-self: center;
 }
 
@@ -95,4 +95,11 @@
   font-size: 30px;
   color: #ceff00;
   margin-bottom: 20px;
+}
+
+.addedComment {
+  color: #5a5a5a;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
 }
