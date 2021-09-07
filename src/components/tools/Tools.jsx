@@ -18,6 +18,7 @@ const Tools = () => {
             <ul className='frontendToolsList'>
               <li className='frontendTools'>.HTML()</li>
               <li className='frontendTools'>.CSS()</li>
+              <li className='frontendTools'>.javascript()</li>
               <li className='frontendTools'>.styledComponents()</li>
               <li className='frontendTools'>.reactJS()</li>
             </ul>

@@ -1,4 +1,7 @@
 import { GitHub, LinkedIn } from '@material-ui/icons'
+
+import { Link } from 'react-router-dom'
+
 import './hero.css'
 
 const Hero = () => {
@@ -25,7 +28,9 @@ const Hero = () => {
           </div>
         </div>
         <div className='rightHeroContent'>
-          <button className='resumeButton'>.resume()</button>
+          <a href='../../../public/files/resume.pdf' download>
+            <button className='resumeButton'>.resume()</button>
+          </a>
           <button className='workButton'>.work()</button>
         </div>
       </div>
