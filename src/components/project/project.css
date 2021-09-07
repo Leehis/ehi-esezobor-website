@@ -53,13 +53,14 @@
   text-align: center;
   font-size: 30px;
   color: #202020;
-  font-style: bold;
+  font-weight: 700;
 }
 
 .cardDesc {
   font-size: 24px;
   color: #202020;
-  font-style: bold;
+  font-style: italic;
+  margin-top: 10px;
 }
 
 .cardLinks {
