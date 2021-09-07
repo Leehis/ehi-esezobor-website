@@ -1,0 +1,100 @@
+.cardBg {
+  background-color: #202020;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.card {
+  width: 100%;
+  background-color: #ffffff;
+  align-self: center;
+}
+
+.cardWrapper {
+  padding: 20px 40px;
+}
+
+.cardTop {
+  background-color: #ceff00;
+  height: 310px;
+  display: flex;
+  padding: 20px 40px;
+}
+
+.cardLeft {
+  flex: 2;
+  display: flex;
+}
+
+.imgBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.img:hover {
+  background: rgba(0, 255, 255, 0.5);
+  transition: all 0.3s linear;
+}
+
+.cardRight {
+  flex: 3;
+  margin-left: 20px;
+  display: grid;
+}
+
+.cardTitle {
+  text-align: center;
+  font-size: 30px;
+  color: #202020;
+  font-style: bold;
+}
+
+.cardDesc {
+  font-size: 24px;
+  color: #202020;
+  font-style: bold;
+}
+
+.cardLinks {
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+.singleLink {
+  background-color: #202020;
+  margin: 10px 20px;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-style: bold;
+  cursor: pointer;
+}
+
+.cardBottom {
+  background-color: #ceff00;
+  margin-top: 20px;
+  height: 50px;
+}
+
+.carouselBox {
+  background: #202020;
+  width: 977;
+  height: 310;
+  text-align: center;
+  box-sizing: border-box;
+}

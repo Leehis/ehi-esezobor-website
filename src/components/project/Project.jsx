@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Carousel from 'react-simply-carousel'
 import { data } from './data'
+import './project.css'
 
 const Project = () => {
   const [activeSlide, setActiveSlide] = useState(0)
@@ -52,19 +53,83 @@ const Project = () => {
         speed={400}
       >
         {data.map((portfolioProject) => {
-          const { id, title, img } = portfolioProject
+          const { id, title, img, description, techStack } = portfolioProject
           return (
             <div
-              style={{
-                background: '#202020',
-                width: 977,
-                height: 310,
-                textAlign: 'center',
-                lineHeight: '50px',
-              }}
+              className='carouselBox'
+              //   style={{
+              //     background: '#202020',
+              //     width: 977,
+              //     height: 310,
+              //     textAlign: 'center',
+              //     boxSizing: 'border-box',
+              //   }}
             >
-              <h3>{id}</h3>
-              <h2>{title}</h2>
+              <div className='cardTop'>
+                <div className='cardLeft'>
+                  <div className='imgBox'>
+                    <img src={img} alt='' />
+                  </div>
+                </div>
+                <div className='cardRight'>
+                  <div
+                    className='cardTitle'
+                    // style={{
+                    //   textAlign: 'center',
+                    //   fontSize: '30px',
+                    //   color: '#202020',
+                    //   fontWeight: '900',
+                    //   paddingTop: '10px',
+                    // }}
+                  >
+                    {title}
+                  </div>
+                  <div
+                    className='cardDesc'
+                    // style={{
+                    //   fontSize: '24px',
+                    //   color: '#202020',
+                    //   fontStyle: 'italic',
+                    //   fontWeight: '500',
+                    // }}
+                  >
+                    {description}
+                  </div>
+                  <div
+                    className='cardLinks'
+                    // style={{
+                    //   display: 'flex',
+                    //   alignItems: 'center',
+                    //   justifyContent: 'center',
+                    // }}
+                  >
+                    <ul
+                      className='links'
+                      //   style={{
+                      //     listStyle: 'none',
+                      //     display: 'flex',
+                      //   }}
+                    >
+                      <li
+                        className='singleLink'
+                        // style={{
+                        //   padding: '10px',
+                        //   cursor: 'pointer',
+                        //   fontSize: '24px',
+                        //   fontStyle: 'bold',
+                        // }}
+                      >{`[github]`}</li>
+                      <li className='singleLink'>live demo</li>
+                      <li className='singleLink'>figma</li>
+                    </ul>
+                  </div>
+                  <div className='stackDisplay'>
+                    <ul className='techStack'></ul>
+                  </div>
+                </div>
+              </div>
+              {/* <h3>{id}</h3>
+              <h2>{title}</h2> */}
             </div>
           )
         })}
