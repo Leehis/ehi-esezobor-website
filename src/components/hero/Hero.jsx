@@ -25,8 +25,8 @@ const Hero = () => {
           </div>
         </div>
         <div className='rightHeroContent'>
-          <button className='hire'>.resume()</button>
-          <button className='work'>.work()</button>
+          <button className='resumeButton'>.resume()</button>
+          <button className='workButton'>.work()</button>
         </div>
       </div>
     </div>
