@@ -14,9 +14,9 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Hero />
+      <Hero />
       <Tools />
-      <Work /> */}
+      <Work />
       <Contact />
     </>
   )
