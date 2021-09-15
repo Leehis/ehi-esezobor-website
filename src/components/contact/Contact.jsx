@@ -7,8 +7,6 @@ const Contact = () => {
   const [visitorEmail, setVisitorEmail] = useState('')
   const [visitorMessage, setVisitorMessage] = useState('')
 
-  const visitor = { visitorName, visitorEmail, visitorMessage }
-
   //   const handleSubmit = (e) => {
   //     e.preventDefault()
   //     const visitor = { visitorName, visitorEmail, visitorMessage }
@@ -42,41 +40,50 @@ const Contact = () => {
   return (
     <div className='contact'>
       <div className='contactWrapper'>
-        <h1 className='title'>Let's Talk</h1>
+        <h1 className='title'>{`<Let's Talk />`}</h1>
         <p className='contactSubtitle'>
-          Start a conversation around new business opportunities or tell me
-          what's on your mind.
+          Have any questions? Shoot me an email or find me around the web.
         </p>
         <div className='contactNameComponent'>
           <form onSubmit={sendEmail}>
-            <label className='contactNameTitle'>What's your name?</label>
-            <input
-              type='text'
-              name='visitorName'
-              required
-              placeholder='John Doe'
-              value={visitorName}
-              onChange={(e) => setVisitorName(e.target.value)}
-            />
-            <label className='contactNameEmail'>What's your name?</label>
-            <input
-              name='visitorEmail'
-              type='text'
-              required
-              placeholder='johndoe@email.com'
-              value={visitorEmail}
-              onChange={(e) => setVisitorEmail(e.target.value)}
-            />
-            <label className='contactMessage'>
-              What would you like to tell me?
-            </label>
-            <textarea
-              required
-              name='visitorMessage'
-              value={visitorMessage}
-              onChange={(e) => setVisitorMessage(e.target.value)}
-            ></textarea>
-            <button>Enter</button>
+            <div className='contactNameDiv'>
+              <label className='contactNameTitle'>What's your name?</label>
+              <input
+                type='text'
+                name='visitorName'
+                required
+                placeholder='John Doe'
+                value={visitorName}
+                onChange={(e) => setVisitorName(e.target.value)}
+              />
+            </div>
+            <div className='contactEmailDiv'>
+              <label className='contactEmail'>
+                What's a good email I can reach you at?
+              </label>
+              <input
+                name='visitorEmail'
+                type='text'
+                required
+                placeholder='johndoe@email.com'
+                value={visitorEmail}
+                onChange={(e) => setVisitorEmail(e.target.value)}
+              />
+            </div>
+            <div className='contactMessageDiv'>
+              <label className='contactMessage'>
+                What would you like to tell me?
+              </label>
+              <textarea
+                required
+                name='visitorMessage'
+                value={visitorMessage}
+                onChange={(e) => setVisitorMessage(e.target.value)}
+              ></textarea>
+            </div>
+            <div className='contactSubmitButton'>
+              <button className='submitButton'>Submit</button>
+            </div>
           </form>
         </div>
       </div>

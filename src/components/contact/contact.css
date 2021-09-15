@@ -1,0 +1,136 @@
+.contact {
+  background-color: #202020;
+  color: white;
+  height: 800px;
+}
+
+.contactWrapper {
+  height: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.title {
+  font-size: 50px;
+  align-self: center;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contactSubtitle {
+  color: #5a5a5a;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contactNameComponent {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contactNameDiv {
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+.contactNameTitle {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contactEmailDiv {
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+.contactEmail {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contactMessageDiv {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactMessage {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contactSubmitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: 2px solid #5a5a5a;
+  background-color: #202020;
+
+  color: #ceff00;
+  font-size: 24px;
+}
+
+input[type='text']:focus {
+  border: 3px solid #ceff00;
+  color: #ceff00;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #5a5a5a;
+  background-color: #202020;
+  color: #ceff00;
+  font-size: 24px;
+  resize: none;
+  height: 150px;
+}
+
+textarea:focus {
+  border: 3px solid #ceff00;
+  color: #ceff00;
+  outline: none;
+}
+
+.submitButton {
+  border: 0px;
+  cursor: pointer;
+  color: #202020;
+  margin: 20px 0px;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  font-weight: bold;
+  width: 30%;
+  background-color: white;
+  will-change: transform;
+  transition: transform 450ms;
+}
+
+.submitButton:hover {
+  transition: transform 125ms;
+  color: #ceff00;
+  background-color: #202020;
+  transition: 0.3s ease-out;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
