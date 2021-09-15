@@ -8,14 +8,16 @@ import Navbar from './components/navbar/Navbar'
 import Project from './components/project/Project'
 import Tools from './components/tools/Tools'
 import Work from './components/work/Work'
+import Contact from './components/contact/Contact'
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <Tools />
-      <Work />
+      <Work /> */}
+      <Contact />
     </>
   )
 }
