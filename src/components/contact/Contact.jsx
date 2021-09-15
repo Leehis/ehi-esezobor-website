@@ -7,6 +7,8 @@ const Contact = () => {
   const [visitorEmail, setVisitorEmail] = useState('')
   const [visitorMessage, setVisitorMessage] = useState('')
 
+  const visitor = { visitorName, visitorEmail, visitorMessage }
+
   //   const handleSubmit = (e) => {
   //     e.preventDefault()
   //     const visitor = { visitorName, visitorEmail, visitorMessage }
@@ -32,7 +34,9 @@ const Contact = () => {
           console.log(error.text)
         }
       )
-    e.target.reset()
+    setVisitorName('')
+    setVisitorEmail('')
+    setVisitorMessage('')
   }
 
   return (
@@ -48,6 +52,7 @@ const Contact = () => {
             <label className='contactNameTitle'>What's your name?</label>
             <input
               type='text'
+              name='visitorName'
               required
               placeholder='John Doe'
               value={visitorName}
@@ -55,6 +60,7 @@ const Contact = () => {
             />
             <label className='contactNameEmail'>What's your name?</label>
             <input
+              name='visitorEmail'
               type='text'
               required
               placeholder='johndoe@email.com'
@@ -66,6 +72,7 @@ const Contact = () => {
             </label>
             <textarea
               required
+              name='visitorMessage'
               value={visitorMessage}
               onChange={(e) => setVisitorMessage(e.target.value)}
             ></textarea>
