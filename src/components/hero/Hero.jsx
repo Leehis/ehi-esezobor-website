@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
         </div>
         <div className='rightHeroContent'>
-          <a href='../../../public/files/resume.pdf' download>
+          <a href='../../../public/files/ehi-esezobor-resume.pdf' download>
             <button className='resumeButton'>.resume()</button>
           </a>
           <button className='workButton'>.work()</button>
