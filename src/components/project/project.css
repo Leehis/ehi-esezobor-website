@@ -1,4 +1,4 @@
-.cardBg {
+/* .cardBg {
   background-color: #202020;
   align-items: center;
   justify-content: center;
@@ -8,6 +8,10 @@
   width: 100%;
   background-color: #ffffff;
   align-self: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .cardWrapper {
@@ -19,6 +23,10 @@
   height: 310px;
   display: flex;
   padding: 20px 40px;
+
+  @media screen and (max-width: 768px) {
+    height: 200px;
+  }
 }
 
 .cardLeft {
@@ -149,4 +157,4 @@
   font-style: italic;
   align-self: center;
   white-space: nowrap;
-}
+} */

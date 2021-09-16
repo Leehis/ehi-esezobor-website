@@ -1,92 +1,100 @@
-/* .cardBg {
+.project {
   background-color: #202020;
+  height: 800px;
+  color: white;
+}
+
+.projectWrapper {
+  height: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.imageBox {
+  width: 100%;
   align-items: center;
   justify-content: center;
+  align-content: center;
   display: flex;
-}
-.card {
-  width: 100%;
-  background-color: #ffffff;
-  align-self: center;
+  margin: 20px 0px;
 }
 
-.cardWrapper {
-  padding: 20px 40px;
-}
-
-.cardTop {
-  background-color: #ceff00;
-  height: 310px;
-  display: flex;
-  padding: 20px 40px;
-}
-
-.cardLeft {
-  flex: 2;
-  display: flex;
-}
-
-.imgBox {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.img {
-  width: 100%;
-  height: 100%;
+img {
   object-fit: cover;
-  border-radius: 10px;
-  align-self: center;
+  width: 100%;
+  height: 500px;
 }
 
-.img:hover {
-  background: rgba(0, 255, 255, 0.5);
-  transition: all 0.3s linear;
-}
-
-.cardRight {
-  flex: 3;
-  margin-left: 20px;
-  display: grid;
-}
-
-.cardTitle {
-  text-align: center;
-  font-size: 30px;
-  color: #202020;
-  font-style: bold;
-}
-
-.cardDesc {
-  font-size: 24px;
-  color: #202020;
-  font-style: bold;
-}
-
-.cardLinks {
-  align-items: center;
+.techStack {
+  display: block;
   justify-content: center;
+  align-items: center;
+}
+
+.techStackTitle {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+.techStackList {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.techList {
+  color: #202020;
+  font-size: 24px;
+  margin-right: 20px;
+  background-color: #ceff00;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.codeLinks {
+  display: block;
+}
+
+.codeLinksTitle {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+.codeLinksList {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
 }
 
 .links {
-  list-style: none;
-  display: flex;
-}
-
-.singleLink {
-  background-color: #202020;
-  margin: 10px 20px;
   color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 10px;
   font-size: 24px;
-  font-style: bold;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  display: flex;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
-.cardBottom {
-  background-color: #ceff00;
-  margin-top: 20px;
-  height: 50px;
-} */
+.icons {
+  font-size: 30px !important;
+  align-self: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.links:hover {
+  color: #ceff00;
+  transition: 0.2s all ease-in-out;
+}
+
+img:hover {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+}

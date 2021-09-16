@@ -1,38 +1,37 @@
 import './card.css'
+import { data } from '../project/data'
+import { GitHub, Link } from '@material-ui/icons'
 
 const Card = () => {
   return (
-    <div className='cardBg'>
-      <div className='card'>
-        <div className='cardWrapper'>
-          <div className='cardTop'>
-            <div className='cardLeft'>
-              <div className='imgBox'>
-                <img
-                  className='img'
-                  src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg'
-                  alt=''
-                />
-              </div>
-            </div>
-            <div className='cardRight'>
-              <div className='cardTitle'>{`[projectTitle]`}</div>
-              <div className='cardDesc'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                praesentium molestiae porro repellat reprehenderit illo eos hic
-                quasi, facilis laborum animi sed quaerat, adipisci ad neque
-                dolorum exercitationem sit? Obcaecati.
-              </div>
-              <div className='cardLinks'>
-                <ul className='links'>
-                  <li className='singleLink'>{`[github]`}</li>
-                  <li className='singleLink'>{`[live site]`}</li>
-                  <li className='singleLink'>{`[figma]`}</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className='cardBottom'>Bottom</div>
+    <div className='project'>
+      <div className='projectWrapper'>
+        <div className='imageBox'>
+          <img
+            src={
+              'https://images.pexels.com/photos/2411520/pexels-photo-2411520.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
+            }
+            alt=''
+          />
+          <div className='overlay'></div>
+        </div>
+        <div className='techStack'>
+          <h3 className='techStackTitle'>{`//Tech stack`}</h3>
+          <ul className='techStackList'>
+            <li className='techList'>ReactJS</li>
+            <li className='techList'>ReactJS</li>
+          </ul>
+        </div>
+        <div className='codeLinks'>
+          <h3 className='codeLinksTitle'>{`//See it in action`}</h3>
+          <ul className='codeLinksList'>
+            <li className='links'>
+              Visit the site <Link className='icons' />
+            </li>
+            <li className='links'>
+              See the code <GitHub className='icons' />
+            </li>
+          </ul>
         </div>
       </div>
     </div>

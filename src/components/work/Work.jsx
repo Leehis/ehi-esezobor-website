@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from '../card/Card'
 import Project from '../project/Project'
 import './work.css'
 
@@ -13,7 +14,8 @@ const Work = () => {
             I enjoy coding a lot and here are some of my projects
           </div>
         </div>
-        <Project />
+        <Card />
+        {/* <Project /> */}
       </div>
     </div>
   )

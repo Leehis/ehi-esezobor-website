@@ -14,10 +14,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Tools />
-      <Work />
-      <Contact />
+      {/* <Hero />
+      <Tools /> */}
+      <Card />
+      {/* <Contact /> */}
     </>
   )
 }
