@@ -15,8 +15,8 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Tools />
       <Card />
+      <Tools />
       <Contact />
     </>
   )

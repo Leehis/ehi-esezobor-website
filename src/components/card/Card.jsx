@@ -10,6 +10,7 @@ import backend from '../../images/backend-social-media.png'
 const Card = () => {
   return (
     <div className='project'>
+     <h1 className='title'>{`<Projects />`}</h1>
       <div className='projectWrapper'>
         <div className='projectOne'>
           <div className='imageBox'>
@@ -97,12 +98,12 @@ const Card = () => {
           <div className='codeLinks'>
             <h3 className='codeLinksTitle'>{`//See it in action`}</h3>
             <ul className='codeLinksList'>
-              <a href=''>
+              
                 <li className='links'>
                   Visit the site? You're already here! <Link className='icons' />
                 </li>
-              </a>
-              <a href='https://github.com'>
+              
+              <a href='https://github.com/Leehis/ehi-esezobor-website'>
                 <li className='links'>
                   See the code <GitHub className='icons' />
                 </li>
