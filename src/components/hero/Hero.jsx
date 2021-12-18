@@ -18,17 +18,21 @@ const Hero = () => {
           </div>
           <div className='socials'>
             <ul className='socialList'>
+            <a href='https://www.linkedin.com/in/ehinomen-chris-esezobor-459631174/' target='blank'>
               <li className='socialIcons'>
                 <LinkedIn className='socialIcon' />
               </li>
+              </a>
+              <a href='https://github.com/Leehis' target='blank'>
               <li className='socialIcons'>
                 <GitHub className='socialIcon' />
               </li>
+              </a>
             </ul>
           </div>
         </div>
         <div className='rightHeroContent'>
-          <a href='../../../public/files/ehi-esezobor-resume.pdf' download>
+          <a href='../../../public/files/ehi-esezobor-resume.pdf' target='blank' download>
             <button className='resumeButton'>.resume()</button>
           </a>
           <button className='workButton'>.work()</button>
