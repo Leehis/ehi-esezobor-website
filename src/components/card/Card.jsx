@@ -26,6 +26,8 @@ const Card = () => {
             <h3 className='techStackTitle'>{`//Tech stack`}</h3>
             <ul className='techStackList'>
               <li className='techList'>ReactJS</li>
+              <li className='techList'>CSS</li>
+
               
             </ul>
           </div>
@@ -93,16 +95,13 @@ const Card = () => {
             <h3 className='techStackTitle'>{`//Tech stack`}</h3>
             <ul className='techStackList'>
               <li className='techList'>ReactJS</li>
+              <li className='techList'>CSS</li>
+
             </ul>
           </div>
           <div className='codeLinks'>
             <h3 className='codeLinksTitle'>{`//See it in action`}</h3>
-            <ul className='codeLinksList'>
-              
-                <li className='links'>
-                  Visit the site? You're already here! <Link className='icons' />
-                </li>
-              
+            <ul className='codeLinksList'>            
               <a href='https://github.com/Leehis/ehi-esezobor-website'>
                 <li className='links'>
                   See the code <GitHub className='icons' />
